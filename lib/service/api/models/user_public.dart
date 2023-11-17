@@ -208,7 +208,7 @@ class LevelInfo {
   int? currentLevel;
   int? currentMin;
   int? currentExp;
-  int? nextExp;
+  String? nextExp;
 
   LevelInfo(
       {this.currentLevel, this.currentMin, this.currentExp, this.nextExp});
@@ -217,7 +217,7 @@ class LevelInfo {
     currentLevel = json['current_level'];
     currentMin = json['current_min'];
     currentExp = json['current_exp'];
-    nextExp = json['next_exp'];
+    // nextExp = json['next_exp'];
   }
 
   Map<String, dynamic> toJson() {
@@ -225,7 +225,7 @@ class LevelInfo {
     data['current_level'] = currentLevel;
     data['current_min'] = currentMin;
     data['current_exp'] = currentExp;
-    data['next_exp'] = nextExp;
+    // data['next_exp'] = nextExp;
     return data;
   }
 }

@@ -206,7 +206,7 @@ class LevelInfo {
     currentLevel = json['current_level'];
     currentMin = json['current_min'];
     currentExp = json['current_exp'];
-    nextExp = json['next_exp'];
+    // nextExp = json['next_exp'];
   }
 
   Map<String, dynamic> toJson() {
